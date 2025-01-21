@@ -1,0 +1,121 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: black;
+}
+.titulo{
+    max-width: 760px;
+    margin: 10px auto;
+    background-color: white;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 8px;
+}
+.dias{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    border-bottom: 1px solid black;
+    padding: 10px 0;
+}
+.numero{
+    flex-wrap: wrap;
+    display: flex;
+    width: 100%;
+}
+.dias span{
+    color: black;
+    font-weight: bold;
+    display: inline-block;
+    width: 14.2%;
+}
+.numero span{
+    display: inline-block;
+    width: 14.2%;
+    color:rgba(0, 0, 0, 0.692);
+    margin: 8px 0;
+}
+button{
+    padding: 1px;
+    display: inline-block;
+    margin-left: 5px;
+    background-color: white;
+    border: none;
+    cursor: pointer;
+}
+#form-container {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1000;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    padding: 24px;
+    font-size: 18px;
+}
+
+#form-container label {
+    margin-bottom: 15px;
+    display: block; 
+}
+
+#form-container input {
+    margin-top: 8px; 
+    margin-bottom: 15px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+#form-container button.submit {
+    margin-top: 15px; 
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 4px;
+    display:flex;
+    
+}
+
+#form-container button.submit:hover {
+    background-color: #45a049;
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    color: #888;
+}
+
+.close-btn:hover {
+    color: #000;
+}
+
+.overlay {
+    display: none; 
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+}
